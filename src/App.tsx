@@ -1,10 +1,17 @@
 import "./styles.css";
+import { UserCard } from "./compornents/UserCard";
+
+const user = {
+  id: 1,
+  name: "jan",
+  email: "test@aa.com",
+  address: "ADDRES"
+};
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <UserCard user={user} />
     </div>
   );
 }
